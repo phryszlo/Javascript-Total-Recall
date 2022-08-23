@@ -1,4 +1,4 @@
-// I. Variables & Datatypes
+// // I. Variables & Datatypes
 
 // // B. STRINGS
 // console.log("STRINGS")
@@ -117,187 +117,187 @@
 //   "All life is an experiment. The more experiments you make the better."
 // ]
 
-//  C. Accessing Elements
-const randomThings = [1, 10, "Hello", true]
-console.log(randomThings[0])
+// //  C. Accessing Elements
+// const randomThings = [1, 10, "Hello", true]
+// console.log(randomThings[0])
 
-randomThings[2] = "World"
-console.log(randomThings)
+// randomThings[2] = "World"
+// console.log(randomThings)
 
-//  D. Change values
-const ourClass = ["Salty", "Zoom", "Sardine", "Slack", "Github"]
-console.log(ourClass[2])
-ourClass[ourClass.length - 1] = "Octocat"
-ourClass.push("Cloud City")
+// //  D. Change values
+// const ourClass = ["Salty", "Zoom", "Sardine", "Slack", "Github"]
+// console.log(ourClass[2])
+// ourClass[ourClass.length - 1] = "Octocat"
+// ourClass.push("Cloud City")
 
-//  E. Mix It Up
-const myArray = [5, 10, 500, 20]
-myArray.push("Aegon")
-myArray.shift()
-myArray.unshift("Bob Marley")
-myArray.pop()
-const returned = Array.prototype.reverse(myArray)
-// const reversed = myArray.reverse()
-console.log(myArray)
-console.log(returned)
-// it mutated and returned an empty object (?)
-//  the googs says it is a reference to the array
+// //  E. Mix It Up
+// const myArray = [5, 10, 500, 20]
+// myArray.push("Aegon")
+// myArray.shift()
+// myArray.unshift("Bob Marley")
+// myArray.pop()
+// const returned = Array.prototype.reverse(myArray)
+// // const reversed = myArray.reverse()
+// console.log(myArray)
+// console.log(returned)
+// // it mutated and returned an empty object (?)
+// //  the googs says it is a reference to the array
 
-//  F. Biggie Smalls
-let numbie = 999
+// //  F. Biggie Smalls
+// let numbie = 999
 
-console.log(
-  numbie < 100 ? "little number" : "big number"
-)
+// console.log(
+//   numbie < 100 ? "little number" : "big number"
+// )
 
-//  G. Monkey in the Middle
-numbie = 7
-if (numbie < 5) {
-  console.log("little number")
-} else if (numbie > 10) {
-  console.log("big number")
-} else {
-  console.log("monkey")
-}
-
-
-//  H. What's in Your Closet?
-const kristynsCloset = [
-  "left shoe",
-  "cowboy boots",
-  "right sock",
-  "GA hoodie",
-  "green pants",
-  "yellow knit hat",
-  "marshmallow peeps"
-];
-
-// Thom's closet is more complicated. Check out this nested data structure!!
-const thomsCloset = [
-  [
-    // These are Thom's shirts
-    "grey button-up",
-    "dark grey button-up",
-    "light blue button-up",
-    "blue button-up",
-  ], [
-    // These are Thom's pants
-    "grey jeans",
-    "jeans",
-    "PJs"
-  ], [
-    // Thom's accessories
-    "wool mittens",
-    "wool scarf",
-    "raybans"
-  ]
-];
+// //  G. Monkey in the Middle
+// numbie = 7
+// if (numbie < 5) {
+//   console.log("little number")
+// } else if (numbie > 10) {
+//   console.log("big number")
+// } else {
+//   console.log("monkey")
+// }
 
 
-console.log(`Kristyn is rocking that ${kristynsCloset[2]} today!`)
+// //  H. What's in Your Closet?
+// const kristynsCloset = [
+//   "left shoe",
+//   "cowboy boots",
+//   "right sock",
+//   "GA hoodie",
+//   "green pants",
+//   "yellow knit hat",
+//   "marshmallow peeps"
+// ];
 
-kristynsCloset.splice(6, 0, "raybans")
-
-kristynsCloset[5] = "stained knit hat"
-
-const thomsOutfit = []
-thomsOutfit.push(thomsCloset[0][0])
-thomsOutfit.push(thomsCloset[1][2])
-thomsOutfit.push(thomsCloset[2][1])
-console.log(thomsOutfit)
-let outfitString = ""
-for (let i = 0; i < thomsOutfit.length; i++) {
-  outfitString += thomsOutfit[i]
-  outfitString = i === thomsOutfit.length - 2 ?
-    `${outfitString} and `
-    :
-    i === thomsOutfit.length - 1 ?
-      `${outfitString}` : `${outfitString}, `
-}
-
-console.log(`Thom is looking fierce in a ${outfitString}!`)
-
-thomsCloset[1][ thomsCloset[1].indexOf('PJs')] = 'Footie Pajamas'
-console.log(thomsCloset[1])
-
-
-// IV. Functions
-// A. printGreeting
-//  it says don't do this one
-// B. printCool
-const printCool = (name) => {
-  return `${name} is cool.`
-}
-console.log(printCool("Y'all"))
-
-// C. calculateCube
-const calculateCube =(num) => {
-  return Math.pow(num, 3)
-}
-console.log(calculateCube(3))
-
-// D. isVowel
-const isVowel = (letter) => {
-  const vowels = ['a','e','i','o','u']
-  if (vowels.indexOf(letter.toLowerCase()) >= 0) {
-    return true
-  } else {
-    return false
-  }
-}
-console.log(isVowel('a'))
-console.log(isVowel('e'))
-console.log(isVowel('i'))
-console.log(isVowel('o'))
-console.log(isVowel('u'))
-console.log(isVowel('A'))
-console.log(isVowel('E'))
-console.log(isVowel('I'))
-console.log(isVowel('O'))
-console.log(isVowel('U'))
-console.log(isVowel('Z'))
+// // Thom's closet is more complicated. Check out this nested data structure!!
+// const thomsCloset = [
+//   [
+//     // These are Thom's shirts
+//     "grey button-up",
+//     "dark grey button-up",
+//     "light blue button-up",
+//     "blue button-up",
+//   ], [
+//     // These are Thom's pants
+//     "grey jeans",
+//     "jeans",
+//     "PJs"
+//   ], [
+//     // Thom's accessories
+//     "wool mittens",
+//     "wool scarf",
+//     "raybans"
+//   ]
+// ];
 
 
-// E. getTwoLengths
-const getTwoLengths = (str1, str2) => {
-  return [str1.length, str2.length]
-}
+// console.log(`Kristyn is rocking that ${kristynsCloset[2]} today!`)
 
-console.log(getTwoLengths('cheese', 'dip'))
+// kristynsCloset.splice(6, 0, "raybans")
 
+// kristynsCloset[5] = "stained knit hat"
 
-// F. getMultipleLengths
-const getMultipleLengths = (arr) => {
-  let lengths = []
-  arr.forEach(element => {
-    lengths.push(element.length)
-  });
-  return lengths
-}
+// const thomsOutfit = []
+// thomsOutfit.push(thomsCloset[0][0])
+// thomsOutfit.push(thomsCloset[1][2])
+// thomsOutfit.push(thomsCloset[2][1])
+// console.log(thomsOutfit)
+// let outfitString = ""
+// for (let i = 0; i < thomsOutfit.length; i++) {
+//   outfitString += thomsOutfit[i]
+//   outfitString = i === thomsOutfit.length - 2 ?
+//     `${outfitString} and `
+//     :
+//     i === thomsOutfit.length - 1 ?
+//       `${outfitString}` : `${outfitString}, `
+// }
 
-console.log(getMultipleLengths(['ten','twenty','thirty']))
+// console.log(`Thom is looking fierce in a ${outfitString}!`)
 
-
-// G. maxOfThree
-const maxOfThree = (n1,n2,n3) => {
-  return Math.max(n1, n2, n3)
-}
-
-console.log(maxOfThree(65, 84, 2))
-console.log(maxOfThree(84, 84, 84))
+// thomsCloset[1][ thomsCloset[1].indexOf('PJs')] = 'Footie Pajamas'
+// console.log(thomsCloset[1])
 
 
-// H. printLongestWord
-const printLongestWord = (strings) => {
-  const args = strings.join(',')
-  let longest = ''
-  const thing = strings.forEach(element => {
-    longest = element.length > longest.length ? element : longest
-  });
-  return longest
-}
+// // IV. Functions
+// // A. printGreeting
+// //  it says don't do this one
+// // B. printCool
+// const printCool = (name) => {
+//   return `${name} is cool.`
+// }
+// console.log(printCool("Y'all"))
 
-console.log(printLongestWord(['print', 'longest', 'word', 'fractal']))
+// // C. calculateCube
+// const calculateCube =(num) => {
+//   return Math.pow(num, 3)
+// }
+// console.log(calculateCube(3))
+
+// // D. isVowel
+// const isVowel = (letter) => {
+//   const vowels = ['a','e','i','o','u']
+//   if (vowels.indexOf(letter.toLowerCase()) >= 0) {
+//     return true
+//   } else {
+//     return false
+//   }
+// }
+// console.log(isVowel('a'))
+// console.log(isVowel('e'))
+// console.log(isVowel('i'))
+// console.log(isVowel('o'))
+// console.log(isVowel('u'))
+// console.log(isVowel('A'))
+// console.log(isVowel('E'))
+// console.log(isVowel('I'))
+// console.log(isVowel('O'))
+// console.log(isVowel('U'))
+// console.log(isVowel('Z'))
+
+
+// // E. getTwoLengths
+// const getTwoLengths = (str1, str2) => {
+//   return [str1.length, str2.length]
+// }
+
+// console.log(getTwoLengths('cheese', 'dip'))
+
+
+// // F. getMultipleLengths
+// const getMultipleLengths = (arr) => {
+//   let lengths = []
+//   arr.forEach(element => {
+//     lengths.push(element.length)
+//   });
+//   return lengths
+// }
+
+// console.log(getMultipleLengths(['ten','twenty','thirty']))
+
+
+// // G. maxOfThree
+// const maxOfThree = (n1,n2,n3) => {
+//   return Math.max(n1, n2, n3)
+// }
+
+// console.log(maxOfThree(65, 84, 2))
+// console.log(maxOfThree(84, 84, 84))
+
+
+// // H. printLongestWord
+// const printLongestWord = (strings) => {
+//   const args = strings.join(',')
+//   let longest = ''
+//   const thing = strings.forEach(element => {
+//     longest = element.length > longest.length ? element : longest
+//   });
+//   return longest
+// }
+
+// console.log(printLongestWord(['print', 'longest', 'word', 'fractal']))
 
 
 // Objects
