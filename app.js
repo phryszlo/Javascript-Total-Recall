@@ -1,120 +1,133 @@
 // // I. Variables & Datatypes
 
-// // B. STRINGS
-// console.log("STRINGS")
-// let firstVariable = "Hello World"
-// firstVariable = 8975;
 
-// let secondVariable = firstVariable
+// How do we assign a value to a variable?
+// let x = 4 <-- like that
+// How do we change the value of a variable?
+// x = 5 <-- same thing
+// How do we assign an existing variable to a new variable?
+// y = x
+// Remind me, what are declare, assign, and define?
+//  declare: let x
+//  assign: x = 4
+//  define: i know of function definition, but not sure what variable definition means
+// What is pseudocoding and why should you do it?
+// writing out the steps of the code you will write without using strict actual syntax
+// What percentage of time should be spent thinking about how you're going to solve a problem vs actually typing in code to solve it?
+// Most of it. Say 90%.
 
-// secondVariable = "stringy"
-// console.log(firstVariable)
+// B. STRINGS
+console.log("STRINGS")
+let firstVariable = "Hello World"
+firstVariable = 8975;
 
-// let yourName = "Daren"
-// console.log(`Hello, my name is ${yourName}`)
+let secondVariable = firstVariable
+
+secondVariable = "stringy"
+console.log(firstVariable)
+
+let yourName = "Daren"
+console.log(`Hello, my name is ${yourName}`)
 
 
-// // C. BOOLEANS
-// console.log("BOOLEANS")
-// const a = 4;
-// const b = 53;
-// const c = 57;
-// const d = 16;
-// const e = 'Kevin';
+// C. BOOLEANS
+console.log("BOOLEANS")
+const a = 4;
+const b = 53;
+const c = 57;
+const d = 16;
+const e = 'Kevin';
 
-// console.log(a < b);
-// console.log(c > d);
-// console.log('Name' === 'Name');
-// // FOR THE NEXT TWO, USE ONLY && OR ||
-// console.log(true || false);
-// console.log(false || false || false || false || false || true);
-// console.log(false === false)
-// console.log(e === 'Kevin');
-// console.log(c - b === a); // note: a < b < c is NOT CORRECT (and is not a valid JS expression, think about using other math operations)
-// console.log(a * a === d); // note: the answer is a simple arithmetic equation, not something "weird"
-// console.log(48 !== '48');
+console.log(a < b);
+console.log(c > d);
+console.log('Name' === 'Name');
+// FOR THE NEXT TWO, USE ONLY && OR ||
+console.log(true || false);
+console.log(false || false || false || false || false || true);
+console.log(false === false)
+console.log(e === 'Kevin');
+console.log(c - b === a); // note: a < b < c is NOT CORRECT (and is not a valid JS expression, think about using other math operations)
+console.log(a * a === d); // note: the answer is a simple arithmetic equation, not something "weird"
+console.log(48 !== '48');
 
-// // D. The Farm
-// console.log("THE FARM")
-// let animal = "goose"
-// if (animal === "cow") {
-//   console.log('mooooo')
-// }
-// else {
-//   console.log("Hey! You're not a cow.")
-// }
+// D. The Farm
+console.log("THE FARM")
+let animal = "goose"
+if (animal === "cow") {
+  console.log('mooooo')
+}
+else {
+  console.log("Hey! You're not a cow.")
+}
 
-// // E. Driver's Ed
-// console.log("DRIVERS ED")
-// let personsAge = 60
-// if (personsAge >= 16) {
-//   console.log("Here are the keys!")
-// }
-// else {
-//   console.log("Sorry, you're too young")
-// }
+// E. Driver's Ed
+console.log("DRIVERS ED")
+let personsAge = 60
+if (personsAge >= 16) {
+  console.log("Here are the keys!")
+}
+else {
+  console.log("Sorry, you're too young")
+}
 
-// // II. Loops
-// console.log("LOOPS")
+// II. Loops
+console.log("LOOPS")
 
-// // A. The basics
-// console.log("THE BASICS")
-// for (let i = 0; i <= 10; i++) {
-//   console.log(i)
-// }
+// A. The basics
+console.log("THE BASICS")
+for (let i = 0; i <= 10; i++) {
+  console.log(i)
+}
 
-// for (let i = 10; i <= 400; i++) {
-//   console.log(i)
-// }
+for (let i = 10; i <= 400; i++) {
+  console.log(i)
+}
 
-// for (let i = 12; i <= 4000; i += 3) {
-//   console.log(i)
-// }
+for (let i = 12; i <= 4000; i += 3) {
+  console.log(i)
+}
 
-// // B. Get even
-// console.log('GET EVEN')
-// for (let i = 1; i <= 100; i++) {
-//   console.log(i)
-//   if (i % 2 === 0) {
-//     console.log(`${i} <-- is an even number`)
-//   }
-// }
+// B. Get even
+console.log('GET EVEN')
+for (let i = 1; i <= 100; i++) {
+  console.log(i % 2 === 0 ? `${i} <-- is an even number` : i)
+}
 
-// // C. Give me five
-// console.log('GIVE ME FIVE')
-// for (let i = 0; i <= 100; i++) {
-//   if (i % 5 === 0) {
-//     console.log(`I found a ${i}. High five!`)
-//   }
-//   if (i % 3 === 0) {
-//     console.log(`I found a ${i}. Three is a crowd`)
-//   }
-// }
+// C. Give me five
+console.log('GIVE ME FIVE')
+for (let i = 0; i <= 100; i++) {
+  if (i % 5 === 0) {
+    console.log(`I found a ${i}. High five!`)
+  }
+  if (i % 3 === 0) {
+    console.log(`I found a ${i}. Three is a crowd`)
+  }
+}
 
-// // D. Savings account
-// //  1.
-// let bank_account =
-//   [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-//   .reduce((sum, num) => sum += num)
+// D. Savings account
+//  1.
+let bank_account =
+  [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+  .reduce((sum, num) => sum += num)
 
-// console.log(bank_account)
+console.log(bank_account)
 
-// //  2.
-// let nums = []
-// for (let i = 1; i <= 100; i++) {
-//   nums.push(i * 2)
-// }
-// let sum = nums.reduce((sum, num) => sum += num)
-// console.log(sum)
+//  2.
+let nums = []
+for (let i = 1; i <= 100; i++) {
+  nums.push(i * 2)
+}
+let sum = nums.reduce((sum, num) => sum += num)
+console.log(sum)
 
 
 // // III. Arrays & Control flow
 // //  B. Easy Does It
 // //    1.
 // const quotes = [
-//   "Let us do something, while we have the chance!...Let us make the most of it, before it is too late! Let us represent worthily for one the foul brood to which a cruel fate consigned us!",
-//   "We do not know what we want and yet we are responsible for what we are - that is the fact.",
-//   "All life is an experiment. The more experiments you make the better."
+//   "The chicken didn't need a reason.",
+//   "Bears also do other things in the woods.",
+//   "Eats, shoots, and leaves."
 // ]
 
 // //  C. Accessing Elements
@@ -302,63 +315,62 @@
 
 // Objects
 //  A. Make a user object
-const user = {
-  name: 'bauser',
-  email: 'bauser.the.dog@dmail.net',
-  age: 11,
-  purchased : []
-}
+// const user = {
+//   name: 'bauser',
+//   email: 'bauser.the.dog@dmail.net',
+//   age: 11,
+//   purchased : []
+// }
 
-// B. Update the user
-user.email = 'bauser.a.dog@wmail.cc'
-user.age++
+// // B. Update the user
+// user.email = 'bauser.a.dog@wmail.cc'
+// user.age++
 
-// C. Adding keys and values
-user.location = 'detroit'
+// // C. Adding keys and values
+// user.location = 'detroit'
 
-// D. Shopaholic!
-user.purchased.push('carbohydrates')
-user.purchased.push('peace of mind')
-user.purchased.push('Merino jodhpurs')
+// // D. Shopaholic!
+// user.purchased.push('carbohydrates')
+// user.purchased.push('peace of mind')
+// user.purchased.push('Merino jodhpurs')
 
-// E. Object-within-object
-user.friend = {
-  name: 'jerry',
-  age: 82,
-  location: 'cincinnati',
-  purchased: []
-}
+// // E. Object-within-object
+// user.friend = {
+//   name: 'jerry',
+//   age: 82,
+//   location: 'cincinnati',
+//   purchased: []
+// }
 
-console.log(user.friend.name)
-console.log(user.friend.location)
-user.friend.age = 55
-user.friend.purchased.push("The One Ring")
-user.friend.purchased.push("A latte")
-console.log(user.friend.purchased[user.friend.purchased.length - 1])
+// console.log(user.friend.name)
+// console.log(user.friend.location)
+// user.friend.age = 55
+// user.friend.purchased.push("The One Ring")
+// user.friend.purchased.push("A latte")
+// console.log(user.friend.purchased[user.friend.purchased.length - 1])
 
-// F. Loops
-for (let i = 0; i < user.purchased.length; i++) {
-  console.log(user.purchased[i])
-}
-for (let i = 0; i < user.friend.purchased.length; i++) {
-  console.log(user.friend.purchased[i])
-}
+// // F. Loops
+// for (let i = 0; i < user.purchased.length; i++) {
+//   console.log(user.purchased[i])
+// }
+// for (let i = 0; i < user.friend.purchased.length; i++) {
+//   console.log(user.friend.purchased[i])
+// }
 
-// G. Functions can operate on objects
-const updateUser = () => {
-  user.age++
-  user.name = user.name.toUpperCase()
-}
+// // G. Functions can operate on objects
+// const updateUser = () => {
+//   user.age++
+//   user.name = user.name.toUpperCase()
+// }
 
-const oldAndLoud = (person) => {
-  person.age++
-  person.name = person.name.toUpperCase()
-  return person
-}
-oldAndLoud(user)
-console.log(user)
-// console.log(oldAndLoud(user))
-
+// const oldAndLoud = (person) => {
+//   person.age++
+//   person.name = person.name.toUpperCase()
+//   return person
+// }
+// oldAndLoud(user)
+// console.log(user)
+// // console.log(oldAndLoud(user))
 
 
 
